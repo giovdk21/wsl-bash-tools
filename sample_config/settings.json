@@ -1,0 +1,5 @@
+{
+    // Change the path of wsl-bash-run.bat to your local one
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\bash.exe",
+    "solargraph.commandPath": "G:\\dev\\others\\wsl-bash-tools\\wsl-bash-run.bat ~/.rbenv/shims/solargraph"
+}
