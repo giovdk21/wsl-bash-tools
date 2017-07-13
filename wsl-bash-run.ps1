@@ -18,5 +18,10 @@ foreach ($arg in $args) {
 }
 
 if ($args_str.Length -gt 0) {
-    & C:\Windows\System32\bash.exe -c "$args_str"
+    if ($env:PROCESSOR_ARCHITEW6432 -eq "AMD64") {
+        & C:\Windows\Sysnative\bash.exe -c "$args_str"
+    }
+    else {
+        & C:\Windows\System32\bash.exe -c "$args_str"
+    }
 }
